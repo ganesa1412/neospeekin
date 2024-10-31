@@ -22,7 +22,7 @@ class BatchController extends Controller
     {
         $data['page'] = 'batch';
         $data['lists'] = Batch::orderBy('year', 'asc')->orderBy('month', 'asc')->orderBy('position', 'asc')->get();
-        $data['months'] = ['', 'Januari',asdasdasdasd 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        $data['months'] = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
         return view('batch', $data);
     }
 
